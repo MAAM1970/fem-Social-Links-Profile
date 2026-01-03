@@ -84,16 +84,24 @@ body {
 }
 
 .links {
-  max-width: 27.9rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.6rem;
+
+  list-style: none;
+}
+
+li {
+  width: 100%;
 }
 
 .social-link:link,
 .social-link:visited {
-  width: 27.9rem;
+  display: block;
+  width: 100%;
+  min-width: 27.9rem;
   font-size: 1.25rem;
   font-weight: 600;
   color: white;
