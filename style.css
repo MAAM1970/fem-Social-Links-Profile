@@ -31,7 +31,7 @@ body {
   width: 100%;
   max-width: 37.5rem;
   height: inherit;
-  color: var(--color-white)
+  color: var(--color-white);
   background-color: var(--grey-bg-cont);
 
   display: flex;
@@ -43,6 +43,7 @@ body {
 }
 
 .card {
+  width: 100%;
   max-width: 32.7rem;
   padding: 2.4rem;
   background-color: var(--grey-bg);
@@ -103,8 +104,10 @@ li {
 .social-link:link,
 .social-link:visited {
   display: block;
-  width: 100%;
-  min-width: 27.9rem;
+  /* width: 100%; */
+  min-width: 0;
+  flex: 1 1 auto;
+  max-width: 100%;
   font-size: 1.25rem;
   box-sizing: border-box;
 
