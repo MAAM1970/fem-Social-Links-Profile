@@ -10,6 +10,8 @@
   --grey-link: #333333ff;
   --grey-bg: #1f1f1fff;
   --grey-bg-cont: #141414ff;
+
+  --color-white: #fff;
 }
 
 html {
@@ -26,9 +28,10 @@ body {
 }
 
 .container {
-  width: 37.5rem;
+  width: 100%;
+  max-width: 37.5rem;
   height: inherit;
-  color: #fff;
+  color: var(--color-white)
   background-color: var(--grey-bg-cont);
 
   display: flex;
@@ -40,7 +43,7 @@ body {
 }
 
 .card {
-  width: 32.7rem;
+  max-width: 32.7rem;
   padding: 2.4rem;
   background-color: var(--grey-bg);
   border-radius: 1.2rem;
@@ -103,6 +106,8 @@ li {
   width: 100%;
   min-width: 27.9rem;
   font-size: 1.25rem;
+  box-sizing: border-box;
+
   font-weight: 600;
   color: white;
   text-decoration: none;
@@ -111,7 +116,7 @@ li {
   padding: 1.2rem;
   border-radius: 0.8rem;
 
-  transition: all 0.5s;
+  transition: background-color 0.5s, transform 0.5s;
 }
 
 .social-link:hover,
@@ -123,8 +128,8 @@ li {
 
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.1rem;
+  height: 0.1rem;
   padding: 0;
   margin: -1px;
   overflow: hidden;
@@ -135,10 +140,10 @@ li {
 
 @media (min-width: 48rem) {
   .container {
-    width: 76.8rem;
+    max-width: 76.8rem;
   }
   .card {
-    width: 38.4rem;
+    max-width: 38.4rem;
     padding: 4rem;
   }
   .links {
@@ -152,10 +157,10 @@ li {
 
 @media (min-width: 76.8rem) {
   .container {
-    width: 144rem;
+    max-width: 144rem;
   }
   .card {
-    width: 38.4rem;
+    max-width: 38.4rem;
     padding: 4rem;
   }
   .links {
